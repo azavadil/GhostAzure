@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://ghosted.me/phantom-documentation/ -->
+<html style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Phantom Documentation</title>
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" type="text/css" href="./Phantom Documentation_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./Phantom Documentation_files/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./Phantom Documentation_files/css">
+
+    
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Ghost 0.3">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://ghosted.me/rss/">
+<style type="text/css"></style></head>
+<body class="post-template" style="display: block;">
+	
+<main class="main_post" role="main">
+	<article class="post_single" role="article" itemscope="" itemtype="http://schema.org/Article">
+		
+		<header role="banner" class="single_post_header" style="background-image: url(http://ghosted.me/content/images/2013/Oct/ftimg2-2.jpg); background-position: 50% -105px;">
+			<div class="container">	
+				
+					<a class="logo" href="http://ghosted.me/"><img src="./Phantom Documentation_files/logo-1.png" alt="Phantom."></a>
+				
+				
+				<time class="post_date" datetime="2013-10-18" itemprop="datePublished">
+					October 18, 2013
+				</time>
+				<h1 class="post_title" itemprop="headline">Phantom Documentation</h1>
+			</div>
+		</header>
+		<div class="container">	
+			<div class="post_content" itemprop="articleBody">
+				<p class="post_excerpt">This documentation is intended to help you properly install and configure the template to your needs. If you have any questions, please contact me via email or leave a comment on my profile.</p>
+
+<p><img src="./Phantom Documentation_files/ftimg2-2.jpg" alt="cover" class="hide"></p>
+
+<h1 id="beforeyoustart">Before you start</h1>
+
+<p>Links That May Be Useful: <br>
+<a href="http://docs.ghost.org/">http://docs.ghost.org/</a> <br>
+<a href="https://en.ghost.org/forum/">https://en.ghost.org/forum/</a></p>
+
+<h2 id="instalation">Instalation.</h2>
+
+<ul>
+<li>Open to your FTP client (or explore your ghost directory if you are hosted ghost locally). </li>
+<li>Navigate to <code>ghost/content/themes</code>.</li>
+<li>Paste main phantom folder. </li>
+<li>Restart ghost and log in to your dashboard. </li>
+<li>In settings under <code>themes</code> select <code>phantom</code> from fropdown menu. * Click <code>save</code>. 
+That's all, now time to configure your theme.</li>
+</ul>
+
+<h2 id="configuration">Configuration.</h2>
+
+<p>For a full functionality of this template, you have to go the setup process. It will not take too long.</p>
+
+<h2 id="generalfunctionality">General functionality</h2>
+
+<ul>
+<li>Go to your dashboard and open settings page.</li>
+<li>There fill inputs like blog name, description etc.</li>
+<li>On <code>blog logo</code> you can add your logo, to be showed in footer and single post page.</li>
+<li>On <code>blog cover</code> upload your image to be showed as your homepage cover photo. I used one of 4 covers included to this template.</li>
+</ul>
+
+<p><strong>Remember!</strong> If you wannt your homepage to look pretty, make sure that your cover image has no less than 1920px width and 700px height.</p>
+
+<ul>
+<li>Into user section, fill areas and add your avatar. That info's and your avatar will be showed in a footer of every single post u write.</li>
+</ul>
+
+<p>That's all from the front-end side. Now you only need to write some javascript's. (just kidding ;))</p>
+
+<h2 id="featuresfunctionality">Features functionality</h2>
+
+<p>There are some features like second logo addicted to cover image, like you see phantom logo looks well in footer, but imagine how it will look on a cover image. </p>
+
+<h3 id="featuredimages">Featured Images</h3>
+
+<p>If you wannt to add featured background to single post, just write this code: <br>
+<code>![cover]</code>. Now, on preview side of your post will you see special place to with caption: "Add image for cover". Click on that or just drag image to this place from your local files. </p>
+
+<p><strong>Remember!</strong> If you wannt your single page to look pretty, make sure that your featured cover image has no less than 1920px width and 700px height.</p>
+
+<p><strong>Remember!</strong> Always put <code>![cover]</code> after first paragraph, this first paragraph is automatically used on homepage as post excerpt. Quick Example from this post:</p>
+
+<pre><code>This documentation is intended to help you properly install and configure the template to your needs. If you have any   questions, please contact me via email or leave a comment on my profile.
+
+![cover]
+</code></pre>
+
+<p>You don't need to always add that image, if you do not do this, phantom will fill empty space with nice color ;)</p>
+
+<h3 id="video">Video</h3>
+
+<p>Just put your iframe code everywhere u wannt. Easy!</p>
+
+<h3 id="footersociallinks">Footer social links</h3>
+
+<p>As you see in footer, there are 3 random buttons. If you wanntt to add social media to your theme, do it in order: <br>
+* Open <code>phantom/partials/footer.hbs</code>
+* Overwrite <code>#</code> with links to appropriate url's i.e if you wann't  a link to your dribbble account, it should look like this:</p>
+
+<pre><code>&lt;a href="http://dribbble.com/yourProfile" target="_blank"&gt;&lt;i class="icon-dribbble"&gt;&lt;/i&gt;&lt;/a&gt;
+</code></pre>
+
+<p>There are many link you can add, twitter, facebook, linkedin, everything you need is correct icon. Full list of icons included to this template you can find <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">here</a>.</p>
+
+<p>Wann't facebook button? Let me explain in a example: <br>
+<code>&lt;li&gt;&lt;a href="http://facebook.com/youProfile" target="_blank"&gt;&lt;i class="icon-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</code></p>
+
+<p>as you see i overwrited hashtag <code>#</code> and added special facebook icon <code>icon-facebook</code> from included icons list.</p>
+
+<p>That's all. Your Theme is installed and configured. It's not? Something is not working properly? Feel free to ask me anything via e-mail: <a href="mailto:<a href='mailto:wojtek@nevide.pl'>wojtek@nevide.pl</a>"></a><a href="mailto:wojtek@nevide.pl">wojtek@nevide.pl</a>, or write a comment in phantom item page on themeforest.</p>
+
+<h2 id="credits">Credits.</h2>
+
+<p><a href="http://www.unsplash.com/">http://www.unsplash.com/</a> - image resources. <br>
+<a href="http://www.ianlunn.co.uk/plugins/jquery-parallax/">http://www.ianlunn.co.uk/plugins/jquery-parallax/</a> - jQuery Parallax <br>
+<a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a> - Font Awesome Icons</p>
+			</div>
+			
+			<div class="post_share">
+				<a class="share" target="_blank" href="http://twitter.com/share?text=Phantom%20Documentation&url=http://ghosted.me/phantom-documentation/"><span class="hidethis_ace"><i class="icon-twitter"></i>Twitter</span></a>
+				<a class="share" target="_blank" href="http://www.facebook.com/sharer.php?u=http://ghosted.me/phantom-documentation/"><span class="hidethis_ace"><i class="icon-facebook"></i>Facebook</span></a>
+				<a class="share" target="_blank" href="https://plus.google.com/share?url=http://ghosted.me/phantom-documentation/"><span class="hidethis_ace"><i class="icon-google-plus"></i>Google+</span></a>
+			</div>
+			
+				<footer class="post_footer clearfix">
+					<address itemscope="" itemtype="http://schema.org/Person">
+						
+						<div class="author_image clearfix">
+							<img src="./Phantom Documentation_files/team2-1.jpg" itemprop="image">
+						</div>
+						
+						<div class="author_info">
+							<h4 class="author_name"><span itemprop="author">Jane Doe</span></h4>
+							
+							<div class="author_website"><a href="http://ghosted.me/" itemprop="url">http://ghosted.me</a></div>
+							
+							<p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+						</div>
+					</address>
+				</footer>
+			
+		</div>
+	</article>
+
+	
+</main>
+<footer class="foot">
+	<div class="foot_content">
+		<div class="container">
+			
+				<a class="foot_logo" href="http://ghosted.me/"><img src="./Phantom Documentation_files/logo-1.png" alt="Phantom."></a>
+			
+			<div class="foot_info">
+				<p>Copyright © <a href="http://ghosted.me/">Phantom.</a> 2013 • All rights reserved.</p>
+				<p>Proudly published with <a href="http://tryghost.org/" target="_blank">Ghost</a>.</p>
+			</div>
+			<div class="foot_social">
+				<ul>
+					<li><a href="http://ghosted.me/phantom-documentation/#" target="_blank"><i class="icon-twitter"></i></a></li>
+					<li><a href="http://ghosted.me/phantom-documentation/#" target="_blank"><i class="icon-dribbble"></i></a></li>
+					<li><a href="http://ghosted.me/rss/" target="_blank"><i class="icon-rss"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+    <script src="./Phantom Documentation_files/jquery.js"></script>
+	
+	
+    <script type="text/javascript" src="./Phantom Documentation_files/parallax.js"></script>
+    <script type="text/javascript" src="./Phantom Documentation_files/scripts.js"></script>
+    <script type="text/javascript" src="./Phantom Documentation_files/detect.js"></script>
+    <script type="text/javascript" src="./Phantom Documentation_files/smoothscroll.js"></script>
+
+<div style="clear: both;"></div></body></html>
